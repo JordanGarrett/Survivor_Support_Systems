@@ -1,0 +1,197 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.header {
+    position: relative;
+    height: 80vh;
+    min-height: 600px;
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/banner.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+  }
+  
+  .header .container {
+    position: relative;
+    height: 100%;
+  }
+  
+  .header .header-content {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 55%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    color: #fff;
+  }
+  
+  .header .header-content .header-subtitle {
+    font-weight: 200;
+    font-size: calc(20px + (45 - 20) * ((100vw - 300px) / (1600 - 300)));
+  }
+  
+  .header .header-content .header-title {
+    font-size: calc(40px + (80 - 40) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: bold;
+    line-height: .7;
+    margin-bottom: 25px;
+    color: inherit;
+  }
+  
+  .header .header-content .header-mono {
+    letter-spacing: 5px;
+    font-weight: 500;
+    font-size: calc(12px + (19 - 12) * ((100vw - 300px) / (1600 - 300)));
+    margin-bottom: 40px;
+  }
+  
+  @media (max-width: 767.98px) {
+    .header {
+      height: 500px;
+      min-height: 500px;
+    }
+    .header .social-icons {
+      margin: auto;
+    }
+    .header .header-content {
+      padding: 20px;
+    }
+    .header .header-content .header-mono {
+      letter-spacing: 2px;
+    }
+  }
+  
+  .header-title {
+    font-size: .2.4rem;
+    font-weight: bold;
+    opacity: .8;
+    color: #212529;
+  }
+  
+  .header-mini {
+    min-height: 24rem;
+    height: 24rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    background: #fcbec6;
+  }
+
+.header-content{
+    text-align: center ;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+.nav-cont {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    text-align: center;
+    padding-right: 16px;
+  }
+    .nav-item {
+      margin: auto;
+      padding-top: 1em;
+      
+    }
+  .nav-link:hover {
+    font-weight: bold;
+    color: #4db0ff;
+  }
+  
+  @media only screen and (max-width: 460px) {
+    .nav-link {
+      font-size: 11px;
+    }
+  }
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+  section {
+    padding: 30px 0;
+    overflow: hidden;
+  }
+  
+  .section-bg {
+    background: #f5f8fd;
+  }
+  
+  .section-title {
+    padding-bottom: 30px;
+  }
+  
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #4db0ff;
+  }
+  
+  .section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #4db0ff;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .section-title p {
+    margin-bottom: 0;
+  }
+  
+/*--------------------------------------------------------------
+# Demonstration Section
+--------------------------------------------------------------*/
+  @media only screen and (max-width: 460px) {
+    video {
+      width: 300px;
+    }
+  }
+
+/*--------------------------------------------------------------
+# Footer Section
+--------------------------------------------------------------*/
+
+.footer {
+  background: #4db0ff;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #000000;
+}
